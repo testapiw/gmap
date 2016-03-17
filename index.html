@@ -1,0 +1,67 @@
+<!DOCTYPE html><html><head>
+        <meta name="viewport" content="initial-scale=1,user-scalable=no">
+        <meta charset="utf-8"><title>Grid</title>
+        <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&language=ua" type="text/javascript"></script>
+    <script src="js/data.js" type="text/javascript"></script>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/grid.min.js" type="text/javascript"></script>
+    </head><body>
+        <div class="panel">
+            <span class="loader"></span>
+        <div class="rmenu" id="menu">
+            <form onsubmit="return false">
+                
+                <fieldset>
+                <div>
+                    <button id="crgrid" value="g">set grid</button>
+                    <input id="glat" value="40" class="igrid"/>&nbsp;x&nbsp;
+                    <input id="glng" value="40" class="igrid"/>
+                </div>
+                <br/>
+                <div>
+                    <label class="label">latitude: </label><input id="nlat"/><br/>
+                    <label class="label">longitude: </label><input id="slng"/>
+                </div>
+                </fieldset>
+                
+                <fieldset><legend>address</legend> 
+                    <input id="origin"/>
+                    <!--div>
+                        <label class="label">origin: </label>
+                        <input id="origin"/>
+                    </div>
+                    <div>
+                        <label class="label">destination: </label>
+                        <input id="destination"/>
+                    </div//-->
+                    <button id="address">search</button>
+                </fieldset>
+                <!--label class="label">id: </label><span id="iddot"></span><br/-->
+                <!--label>west: </label><input id="wlat"/><br/>
+                <label>east: </label><input id="elng"/-->
+                 
+            </form>
+            
+            <fieldset><legend>info</legend> 
+            <div  class="info">
+                <div id="dispanceDB"></div>
+                <div id="wrapperinfo"></div>
+                <button id="clearpath">clear path</button>
+            </div>
+            </fieldset>
+            
+            <!--div id="directions_panel"></div//-->
+            
+            <fieldset><legend>machine location</legend> 
+            <div>
+                <button id="machine">update</button>
+            </div>
+            </fieldset>           
+          
+            </div>
+        </div>     
+        <div id="map"></div>
+        
+        
+        </body></html>
